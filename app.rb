@@ -1,4 +1,6 @@
 require 'sinatra/base'
+#require 'pry'
+
 
 class App < Sinatra::Base
 
@@ -9,6 +11,7 @@ class App < Sinatra::Base
 
   post '/team' do
     @params = params
+    #raise params.inspect
     erb :team
   end
 

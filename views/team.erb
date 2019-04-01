@@ -2,13 +2,15 @@
 <html>
  <head>
    <meta charset="UTF-8">
-    <title>Basketball Team</title>
+    <title><%= @params[:name] %></title>
   </head>
   <body>
-    <% @params.each do |k,v| %>
-    <h2><%= k: v %></h2>
-    <% end %
-
+    Team Name: <%= @params[:name] %>
+    Coach: <%= @params[:coach] %>
+    Point Guard: <%= @params[:pg] %>
+    Power Forward: <%= @params[:pf] %>
+    Shooting Guard: <%= @params[:sg] %>
+    Center: <%= @params[:c] %>
 
   </body>
 </html>
